@@ -1,4 +1,4 @@
-#include "/home/throne/game/headers/header.h"
+#include "/home/throne/The_Maze/headers/header.h"
 
 /**
    *initWindow - Initialize SDL and Create a resizable window
@@ -28,12 +28,12 @@ renderer = SDL_CreateRenderer(window, -1,
 SDL_RENDERER_ACCELERATED
 | SDL_RENDERER_PRESENTVSYNC);
 SDL_SetWindowResizable(window, SDL_TRUE);
-SDL_SetRenderDrawColor(renderer, 100, 0, 0, SDL_ALPHA_OPAQUE);
 return;
 }
 
 /**
   *Game loop with closing event
+
 
 void gameRun()
 {
@@ -41,7 +41,7 @@ bool gamerun = true;
 while (gamerun)
 {
 SDL_Event ev;
-while (SDL_PollEvent(&ev))
+if (SDL_PollEvent(&ev))
 {
 if (ev.type == SDL_QUIT)
 gamerun = false;
@@ -53,7 +53,7 @@ return;
 /**
  * destroyWindow - Destroy window when and clean up
 */
-
+/**
 void events(int py, int px)
 {
 bool gamerun = true;
@@ -88,7 +88,7 @@ break;
 }
 return;
 }
-
+*/
 
 void destroyWindow()
 {

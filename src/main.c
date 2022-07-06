@@ -1,8 +1,8 @@
-#include "/home/throne/game/headers/header.h"
+#include "/home/throne/The_Maze/headers/header.h"
 int main()
 {
 createWindow();
-player();
+events();
 destroyWindow();
 return (0);
 }
