@@ -10,7 +10,9 @@
 
 #define SCREEN_WIDTH 640
 #define SCREEN_HEIGHT 480
-
+#define mapX 24
+#define mapY 24
+#define mapS 64
 
 SDL_Window *window;
 SDL_Renderer *renderer;
@@ -20,12 +22,11 @@ void printError();
 void renderScreen();
 void destroyWindow();
 void gameRun();
-void game();
 
 void player();
 
 void events();
 
-
-
+void drawMap2D();
+bool detectCollision();
 #endif /*HEADER_H */
