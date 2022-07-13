@@ -31,65 +31,6 @@ SDL_SetWindowResizable(window, SDL_TRUE);
 return;
 }
 
-/**
-  *Game loop with closing event
-
-
-void gameRun()
-{
-bool gamerun = true;
-while (gamerun)
-{
-SDL_Event ev;
-if (SDL_PollEvent(&ev))
-{
-if (ev.type == SDL_QUIT)
-gamerun = false;
-}
-}
-return;
-}
-*/
-/**
- * destroyWindow - Destroy window when and clean up
-*/
-/**
-void events(int py, int px)
-{
-bool gamerun = true;
-while (gamerun)
-{
-SDL_Event ev;
-while (SDL_PollEvent(&ev))
-{
-switch(ev.type)
-case SDL_QUIT:
-gamerun = false;
-break;
-}
-
-switch(ev.type)
-case SDL_KEYDOWN:
-switch(ev.key.keysym.sym)
-{
-case SDLK_w:
-py -= 10;
-break;
-case SDLK_s:
-py += 10;
-break;
-case SDLK_a:
-px += 10;
-break;
-case SDLK_d:
-px -= 10;
-break;
-}
-}
-return;
-}
-*/
-
 void destroyWindow()
 {
 SDL_DestroyRenderer(renderer);
